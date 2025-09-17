@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+env/
+venv/
+.env
+
+# Generated data artifacts
+data/nemsis_raw/
+data/nemsis_states/
+data/nemsis_cleaned.csv
+
+# OS cruft
+.DS_Store

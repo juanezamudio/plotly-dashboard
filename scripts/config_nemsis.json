@@ -1,0 +1,111 @@
+{
+  "states": [
+    "NY",
+    "CA",
+    "GA",
+    "IL",
+    "UT",
+    "IA"
+  ],
+  "min_date": "2023-01-01",
+  "keep_columns": [
+    "state",
+    "county_fips",
+    "incident_date",
+    "dispatch_ts",
+    "enroute_ts",
+    "onscene_ts",
+    "response_time_sec",
+    "call_type",
+    "priority",
+    "patient_age",
+    "urbanicity",
+    "transported",
+    "day_of_week",
+    "hour_of_day",
+    "latitude",
+    "longitude"
+  ],
+  "element_ids": {
+    "state": [
+      "dAgency.02",
+      "State"
+    ],
+    "county_fips": [
+      "eScene.21",
+      "SceneCountyCode",
+      "County"
+    ],
+    "dispatch_ts": [
+      "eTimes.03",
+      "DispatchNotified",
+      "DispatchDateTime"
+    ],
+    "enroute_ts": [
+      "eTimes.05",
+      "UnitEnRoute",
+      "EnRouteDateTime"
+    ],
+    "onscene_ts": [
+      "eTimes.06",
+      "ArrivedOnScene",
+      "ArriveSceneDateTime"
+    ],
+    "call_type": [
+      "eDispatch.01",
+      "ComplaintReportedByDispatch",
+      "DispatchComplaint"
+    ],
+    "priority": [
+      "eDisposition.27",
+      "EMSUnitLevelOfCare",
+      "Priority"
+    ],
+    "patient_age": [
+      "ePatient.13",
+      "PatientAge"
+    ],
+    "urbanicity": [
+      "eScene.17",
+      "SceneUrbanicity"
+    ],
+    "transported": [
+      "eDisposition.12",
+      "TransportDisposition",
+      "DispositionTransported"
+    ]
+  },
+  "dictionary_possible_headers": {
+    "element_id": [
+      "ElementID",
+      "Element Id",
+      "Element",
+      "NEMSIS Element",
+      "Variable",
+      "Field",
+      "Element Name"
+    ],
+    "label": [
+      "Label",
+      "LongName",
+      "Element Label",
+      "Description"
+    ],
+    "start": [
+      "Start",
+      "Start Position",
+      "StartColumn"
+    ],
+    "length": [
+      "Length",
+      "Field Length",
+      "Size"
+    ],
+    "name": [
+      "Name",
+      "ColumnName",
+      "Variable Name"
+    ]
+  },
+  "geo_counties_path": "/mnt/data/plotly_dash_scaffold/data/geo/geo_counties.csv"
+}
